@@ -26,5 +26,6 @@ from django.urls import include, path # type: ignore
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('main.urls')),
+    path('cart/', include('cart.urls', namespace='cart')),
+    path('', include('shop_core.urls')),
 ]

@@ -1,0 +1,37 @@
+:root {
+    --primary: #2A2A2A;
+    --secondary: #4A90E2;
+    --light: #F8F9FA;
+}
+
+.product-image {
+    height: 200px;
+    object-fit: contain;
+    padding: 15px;
+}
+
+.card {
+    transition: transform 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.btn-outline-primary {
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+.btn-outline-primary:hover {
+    background: var(--secondary);
+    color: white;
+}
+
+footer {
+    background: var(--primary);
+    padding: 2rem 0;
+    margin-top: 5rem;
+}
