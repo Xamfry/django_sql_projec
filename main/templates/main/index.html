@@ -1,0 +1,13 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+</head>
+<body>
+    <h1>Чо ты тут забыл?!</h1>
+    <p>Сегодня: {% now "d.m.Y" %}</p>
+    <script src="{% static 'main/js/script.js' %}"></script>
+</body>
+</html>
